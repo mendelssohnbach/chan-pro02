@@ -1,0 +1,33 @@
+/*全体の設定*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div {
+  width: 40vw;
+  height: 49vh;
+  border: 1px solid #ccc;
+  margin-bottom: 2vw;
+}
+
+div {
+  background: url('../img/bg-cat-light.png') right bottom no-repeat;
+}
+.px {
+  background-size: 150px 50px;
+}
+.per {
+  background-size: 50% 50%;
+}
+.cover {
+  background-size: cover;
+}
+.contain {
+  background-size: contain;
+}
