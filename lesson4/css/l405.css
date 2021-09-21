@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ナビゲーションの装飾 */
+header {
+  width: 100vw;
+}
+ul {
+  background-color: #37bd82;
+  text-align: center;
+}
+ul li {
+  display: inline-block; /* 横並びに変換 */
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+ul li a::after {
+  content: url(../img/arrow.png);
+  vertical-align: middle; /* テキストとアイコンを垂直中央揃え */
+}
+ul li a:hover {
+  background-color: #2c9869;
+}
+ul.sub-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+ul.sub-list li a {
+  width: 100%;
+}
+ul.gnav-list li:hover > ul.sub-list {
+  display: block; /* 最後に記述 */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* その他設定 */
+main {
+  margin-top: 60px;
+}
+main div {
+  background-color: #eee;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto 40px;
+}
