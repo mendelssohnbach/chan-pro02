@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 共通設定 */
+div {
+  width: 100%;
+  padding: 1em;
+  background-color: #eee;
+}
+p {
+  width: 200px;
+  height: 200px;
+  background-color: #00c;
+  color: #fff;
+  margin: 0 auto; /* p要素を中央寄せ */
+  text-align: center; /* 要素内の子要素を中央寄せ */
+}
