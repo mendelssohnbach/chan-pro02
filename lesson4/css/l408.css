@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 共通設定 */
+div {
+  width: 100%;
+  padding: 1em;
+  background-color: #eee;
+}
+p {
+  width: 200px;
+  height: 200px;
+  background-color: #ff0;
+  color: #ef476f;
+  display: flex;
+  align-items: center; /* 垂直方向中央寄せ */
+  justify-content: center; /* 水平方向中央寄せ */
+}
+span {
+  font-size: 20px;
+}
