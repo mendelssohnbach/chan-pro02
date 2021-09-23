@@ -22,7 +22,11 @@
     <main>
       <!-- メインビジュアル -->
       <div class="mv-area">
-        <img src="img/photo_01.jpg" alt="この夏最後のキャンペーン！最短5日でダイバーデビュー！" />
+        <img
+          src="img/photo_01.jpg"
+          class="mv-img"
+          alt="この夏最後のキャンペーン！最短5日でダイバーデビュー！"
+        />
       </div>
       <!-- セクション1 -->
       <section>
@@ -48,10 +52,11 @@
             <tr>
               <th>料金に含まれるもの</th>
               <td>教材費・実習費・器材レンタル代・ライセンス申請料</td>
-              <tr>
-                <th>料金に含まれないもの</th>
-                <td>交通費・宿泊費・追加ダイブ費（希望者のみ）</td>
-              </tr>
+            </tr>
+
+            <tr>
+              <th>料金に含まれないもの</th>
+              <td>交通費・宿泊費・追加ダイブ費（希望者のみ）</td>
             </tr>
           </table>
         </div>
@@ -63,13 +68,17 @@
           <form action="program.php" method="post">
             <dl>
               <dt><label for="user-name">氏名</label></dt>
-              <dd><input name="user-name" id="user-name"type="text"></dd>
+              <dd><input name="user-name" id="user-name" type="text" /></dd>
               <dt><label for="user-email">メールアドレス</label></dt>
-              <dd><input name="user-email" id="user-email"type="text"></dd>
+              <dd><input name="user-email" id="user-email" type="text" /></dd>
               <dt>水泳経験はありますか</dt>
               <dd>
-                <input type="radio" name="swim" value="はい" id="swim-yes"><label for="swim-yes">はい</label>
-                <input type="radio" name="swim" value="はい" id="swim-no"><label for="swim-no">いいえ</label>
+                <input type="radio" name="swim" value="はい" id="swim-yes" /><label for="swim-yes"
+                  >はい</label
+                >
+                <input type="radio" name="swim" value="いいえ" id="swim-no" /><label for="swim-no"
+                  >いいえ</label
+                >
               </dd>
             </dl>
             <div class="form-submit">
@@ -80,10 +89,18 @@
       </section>
       <!-- フォーム下の写真エリア -->
       <div class="form-img-area">
-        <img src="img/photo_02.jpg" alt="写真：サンゴ礁と熱帯魚">
+        <img src="img/photo_02.jpg" alt="写真：サンゴ礁と熱帯魚" />
       </div>
     </main>
     <!-- フッター -->
-    <footer></footer>
+    <footer>
+      <address>
+        〒101-0051<br />
+        東京都千代田区神田神保町1丁目105<br />
+        00-0000-0000<br />
+        株式会社MdN DIVE
+      </address>
+      <small>&copy; MdN Corporation.</small>
+    </footer>
   </body>
 </html>
