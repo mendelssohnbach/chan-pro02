@@ -114,3 +114,15 @@ button[type='submit'] {
 .form-img-area img {
   width: 100%;
 }
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+address,
+small {
+  background: 10px;
+  color: #2f4858;
+}
