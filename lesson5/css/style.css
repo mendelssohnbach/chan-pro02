@@ -52,3 +52,21 @@ ol li {
   margin-bottom: 20px;
   color: #fff;
 }
+
+/* TABLE */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+}
+th,
+td {
+  padding: 1em;
+  border: 1px solid #3d5a6d;
+  color: #3d5a6d;
+}
+th {
+  background-color: #bef1f6;
+}
