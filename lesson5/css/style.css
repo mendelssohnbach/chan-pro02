@@ -70,3 +70,47 @@ td {
 th {
   background-color: #bef1f6;
 }
+
+/* FORM */
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+form dt {
+  margin-bottom: 20px;
+}
+form dt,
+form label {
+  color: #fff;
+}
+form dt::before {
+  content: '◆';
+  margin-right: 10px;
+}
+form dd {
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+input {
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+input[type='radio'] {
+  width: 1em;
+  margin-left: 24px;
+  margin-right: 4px;
+}
+button[type='submit'] {
+  background-color: #3eb6bd;
+  margin: 40px auto 0;
+  display: block;
+  width: 70%;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.form-img-area img {
+  width: 100%;
+}
