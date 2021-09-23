@@ -46,3 +46,9 @@ p {
   margin-bottom: 40px;
   color: #fff;
 }
+
+/* LIST */
+ol li {
+  margin-bottom: 20px;
+  color: #fff;
+}
