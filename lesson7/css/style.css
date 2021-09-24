@@ -148,3 +148,27 @@ section {
     display: block;
   }
 }
+
+/* headerのスタイル */
+.header {
+  position: flex;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 200;
+}
+
+/* サイトロゴとナビゲーションの並び */
+.header-logo-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* サイトロゴの表示 */
+.logo-area {
+  width: 200px;
+  margin: 0;
+  text-align: left;
+}
