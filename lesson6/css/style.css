@@ -109,3 +109,26 @@ h3 {
 .contents-list ul li:last-child {
   border-bottom: none;
 }
+
+/* 「書籍の著者」のスタイル調整 */
+.author {
+  margin-bottom: 24px;
+}
+
+.author dl {
+  width: 296px;
+  margin: 0 auto;
+}
+
+.author dl dt {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+}
+
+.author dl dd {
+  margin-bottom: 16px;
+  font-size: 0.75em;
+}
