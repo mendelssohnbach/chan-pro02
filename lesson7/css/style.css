@@ -87,3 +87,12 @@ section {
   transform: rotate(45deg);
   z-index: -100;
 }
+
+/*テキスト関連*/
+.txt-centered {
+  text-align: center;
+}
+
+.txt-lead {
+  font-weight: 700;
+}
