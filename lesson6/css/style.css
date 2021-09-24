@@ -83,3 +83,29 @@ h3 {
   left: 8px;
   background: url(../img/arrow.png) no-repeat right center;
 }
+
+/* 書籍の章構成のスタイル設定 */
+.contents-list {
+  margin-bottom: 24px;
+  box-flex-group: url(../img/contents-list_bg.jpg) no-repeat center center #fdd;
+  background-size: cover;
+  padding: 24px 0;
+}
+
+.contents-list ul {
+  list-style: none;
+  width: 296px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contents-list ul li {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+
+.contents-list ul li:last-child {
+  border-bottom: none;
+}
