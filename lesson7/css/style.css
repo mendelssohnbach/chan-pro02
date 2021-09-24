@@ -274,3 +274,32 @@ section {
   font-size: 16px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .logo-area {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gnav-menu {
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  .gnav-item {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .gnav-item a {
+    color: #333;
+    width: 120px;
+  }
+
+  .gnav-item a:hover {
+    color: #85a7cc;
+  }
+}
