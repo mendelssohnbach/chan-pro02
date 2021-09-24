@@ -117,3 +117,34 @@ section {
   color: #fff;
   background: #6699ff;
 }
+
+/* レイアウト関連 */
+.inner {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* PC用のスタイル */
+@media screen and(min-width: 768px) {
+  .inner {
+    max-width: 1200px;
+  }
+}
+/* モバイルとPCでの表示に関するスタイル */
+.sp-only {
+  display: block;
+}
+.pc-only {
+  display: none;
+}
+
+/* PC用のスタイル */
+@media screen and(min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+
+  .pc-only {
+    display: block;
+  }
+}
