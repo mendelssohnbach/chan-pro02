@@ -43,7 +43,7 @@ address {
 
 a {
   color: #666;
-  text-emphasis: none;
+  text-decoration: none;
 }
 
 a:hover,
@@ -89,7 +89,7 @@ section {
 }
 
 /*テキスト関連*/
-.txt-centered {
+.txt-center {
   text-align: center;
 }
 
@@ -151,7 +151,7 @@ section {
 
 /* headerのスタイル */
 .header {
-  position: flex;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 10px;
@@ -211,7 +211,8 @@ section {
   bottom: -16px;
 }
 
-#gnav-close span {
+/* 閉じる用の薄黒箇所 */
+#gnav-close {
   display: none;
   position: fixed;
   z-index: -90;
@@ -224,6 +225,7 @@ section {
   transition: 0.3s ease-in-out;
 }
 
+/* チェックがついたら表示させる */
 #gnav-input:checked ~ #gnav-close {
   display: block;
   opacity: 0.5;
@@ -234,6 +236,7 @@ section {
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
 
+/* メニューの中身 */
 #gnav-content {
   overflow: auto;
   position: fixed;
@@ -275,13 +278,13 @@ section {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo-area {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .gnav-menu {
     flex-direction: row;
     padding-top: 15px;
