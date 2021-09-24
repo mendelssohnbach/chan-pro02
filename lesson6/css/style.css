@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 /* 全体のスタイル調整 */
 * {
@@ -24,11 +24,10 @@ h1 img {
   max-width: 100%;
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   h1 {
-    border-top: 1px solid #fa982d;
+    border-top: 16px solid #fa982d;
     margin-bottom: 40px;
-    padding-top: 40px;
     text-align: center;
   }
 
@@ -37,9 +36,20 @@ h1 img {
   }
 }
 
+@media screen and (min-width: 992px) {
+  h1 {
+    padding-top: 40px;
+  }
+}
+
 /* 見出し関連のスタイル調整 */
+h2 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 h2 img {
-  height: 3em;
+  height: 3rem;
 }
 
 h3 {
@@ -48,7 +58,7 @@ h3 {
   font-size: 1rem;
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   h2 {
     margin-bottom: 32px;
   }
@@ -57,7 +67,7 @@ h3 {
     height: 4rem;
   }
 
-  h3 img {
+  h3 {
     margin-bottom: 24px;
     font-size: 1.25rem;
   }
@@ -112,10 +122,46 @@ h3 {
   background: url(../img/arrow.png) no-repeat right center;
 }
 
-/* 書籍の章構成のスタイル設定 */
+@media screen and (min-width: 768px) {
+  .feature {
+    margin-bottom: 80px;
+  }
+
+  .feature-wrap {
+    width: 768px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .feature_01,
+  .feature_02 {
+    width: 344px;
+    margin: 0;
+  }
+
+  .feature_img {
+    margin-bottom: 24px;
+  }
+
+  .feature_text {
+    font-size: 1rem;
+  }
+
+  .book-more a {
+    padding: 16px 96px;
+    font-size: 1rem;
+  }
+
+  .book-more a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* 「本書の章構成」のスタイル調整 */
 .contents-list {
   margin-bottom: 24px;
-  box-flex-group: url(../img/contents-list_bg.jpg) no-repeat center center #fdd;
+  background: url(../img/contents-list_bg.jpg) no-repeat center center #fdd;
   background-size: cover;
   padding: 24px 0;
 }
@@ -130,7 +176,7 @@ h3 {
 }
 
 .contents-list ul li {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dotted #000;
   padding: 10px 0;
 }
 
@@ -138,7 +184,19 @@ h3 {
   border-bottom: none;
 }
 
-/* 「書籍の著者」のスタイル調整 */
+@media screen and (min-width: 768px) {
+  .contents-list {
+    margin-bottom: 80px;
+    padding: 32px 0;
+  }
+
+  .contents-list ul {
+    width: 640px;
+    font-size: 1rem;
+  }
+}
+
+/* 「本書の著者」のスタイル調整 */
 .author {
   margin-bottom: 24px;
 }
@@ -158,7 +216,28 @@ h3 {
 
 .author dl dd {
   margin-bottom: 16px;
-  font-size: 0.75em;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .author {
+    margin-bottom: 80px;
+  }
+
+  .author dl {
+    width: 680px;
+  }
+
+  .author dl dt {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+  }
+
+  .author dl dd {
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
 }
 
 /* フッター部分のスタイル調整 */
@@ -213,4 +292,53 @@ h3 {
 .copyright {
   text-align: center;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .book-info {
+    height: 80vh;
+  }
+
+  .book-info-wrap {
+    width: 680px;
+    padding: 32px;
+  }
+
+  .book-info-wrap p {
+    margin: 0 0 32px;
+    font-size: 2rem;
+  }
+
+  .book-info ul {
+    font-size: 1rem;
+  }
+
+  .book-info ul li {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  .footer-info {
+    padding: 32px 0 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-info ul {
+    margin: 0;
+  }
+
+  .footer-info ul li {
+    margin: 0 16px;
+  }
+
+  .footer-info ul li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
 }
