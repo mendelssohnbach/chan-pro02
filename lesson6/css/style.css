@@ -57,3 +57,29 @@ h3 {
 .feature_text {
   font-size: 0.75rem;
 }
+
+.book-more {
+  text-align: center;
+}
+
+.book-more a {
+  display: inline-block;
+  padding: 8px 40px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #333;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.book-more a::after {
+  display: inline-block;
+  position: relative;
+  content: '';
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 8px;
+  background: url(../img/arrow.png) no-repeat right center;
+}
