@@ -1,0 +1,16 @@
+@charset "utf-8"
+
+/* 全体のスタイル調整 */
+* {
+  box-sizing: border-box;
+}
+
+/* bodyの初期スタイル調整 */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', YuGothic, 'ヒラギノ角ゴ ProN W3',
+    'Hiragino Kaku Gothic ProN', Arial, 'メイリオ', Meiryo, system-ui, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
